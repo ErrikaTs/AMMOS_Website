@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App Support &amp; Frequently Asked Questions — AMMOS by Blue Eye Luxury</title>
+  <meta
+    name="description"
+    content="Official App Support and Help Center for AMMOS by Blue Eye Luxury. Contact our support team at support@blueeyeluxury.com or browse Frequently Asked Questions for Captains and Crew."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ====================================================================
+       Sticky Blurred Header & Navigation
+       ==================================================================== -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-link" aria-label="AMMOS by Blue Eye Luxury Home">
+        <span class="brand-logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="5" r="2.5"></circle>
+            <line x1="12" y1="7.5" x2="12" y2="19"></line>
+            <line x1="8" y1="11" x2="16" y2="11"></line>
+            <path d="M5 15c0 4 3.5 6 7 6s7-2 7-6"></path>
+            <path d="M3 20.5c2-1.2 4-1.2 6 0s4 1.2 6 0 4-1.2 6 0"></path>
+          </svg>
+        </span>
+        <span class="brand-text-group">
+          <span class="brand-wordmark">AMMOS</span>
+          <span class="brand-sub-badge">by Blue Eye Luxury</span>
+        </span>
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-nav-menu"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav id="primary-nav-menu" class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html#features" class="nav-link">Features</a></li>
+          <li><a href="index.html#roles" class="nav-link">Captains &amp; Crew</a></li>
+          <li><a href="support.html" class="nav-link active" aria-current="page">Support</a></li>
+          <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+          <li><a href="terms.html" class="nav-link">Terms</a></li>
+        </ul>
+        <a href="index.html#download" class="nav-cta">Download AMMOS</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================================================================
+         Top Hero Banner in var(--color-surface-mint)
+         ================================================================== -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow-badge">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          <span>AMMOS &middot; Blue Eye Luxury Help Center</span>
+        </div>
+
+        <h1>App Support &amp; Frequently Asked Questions</h1>
+
+        <p>
+          Dedicated maritime support for Yacht Captains and Crew using the AMMOS mobile application.
+        </p>
+
+        <div class="page-hero-updated">
+          <span>Average Response Time: Under 24 Hours &middot; <a href="mailto:support@blueeyeluxury.com">support@blueeyeluxury.com</a></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Responsive 2-Column Support Section
+         ================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="two-col-grid">
+          <!-- Left Column: Interactive Contact Support Form -->
+          <div class="form-card">
+            <div class="eyebrow-badge">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span>Contact AMMOS Support</span>
+            </div>
+            <h2 class="h3 card-title">Send Us a Message</h2>
+            <p class="card-subtitle">
+              Have a question about your account, a job listing, or an active match? Fill out the form below and our team will reply promptly.
+            </p>
+
+            <form
+              id="support-form"
+              class="contact-form"
+              data-success-message="Thank you for contacting AMMOS Support at Blue Eye Luxury. Your message has been received and our team will reply to your email within 24 hours."
+            >
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="support-name" class="form-label">Full Name *</label>
+                  <input
+                    type="text"
+                    id="support-name"
+                    name="full_name"
+                    class="form-input"
+                    placeholder="Capt. Alex Vance"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="support-email" class="form-label">Email Address *</label>
+                  <input
+                    type="email"
+                    id="support-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="alex@example.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="support-role" class="form-label">Your Role in AMMOS *</label>
+                  <select id="support-role" name="role" class="form-select" required>
+                    <option value="Captain">Captain</option>
+                    <option value="Crew">Crew</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="support-topic" class="form-label">Topic *</label>
+                  <select id="support-topic" name="topic" class="form-select" required>
+                    <option value="Account & 18+ Verification">Account &amp; 18+ Verification</option>
+                    <option value="My Yachts & Job Listings">My Yachts &amp; Job Listings</option>
+                    <option value="Port-Local Timezones">Port-Local Timezones</option>
+                    <option value="Active Match & CV Unlock">Active Match &amp; CV Unlock</option>
+                    <option value="AMMOS Pro Subscription">AMMOS Pro Subscription</option>
+                    <option value="Bug Report">Bug Report</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="support-message" class="form-label">Message *</label>
+                <textarea
+                  id="support-message"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Describe how our team can help you..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Message to Support
+              </button>
+
+              <div class="form-confirmation" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <!-- Right Column: Direct Contact & Store Compliance Quick Cards -->
+          <div class="support-side-stack">
+            <!-- Direct Email Card -->
+            <div class="form-card form-card-mint">
+              <div class="eyebrow-badge">
+                <span class="eyebrow-dot" aria-hidden="true"></span>
+                <span>Direct Email Support</span>
+              </div>
+              <h3 class="card-title">Blue Eye Luxury Support Team</h3>
+              <p class="card-subtitle">
+                Prefer to reach out directly from your email client? Contact our support desk anytime for account, billing, or technical assistance:
+              </p>
+              <a href="mailto:support@blueeyeluxury.com" class="btn btn-primary btn-full">
+                support@blueeyeluxury.com
+              </a>
+            </div>
+
+            <!-- Quick Compliance Links Card -->
+            <div class="form-card">
+              <h3 class="card-title">Store Compliance &amp; Legal Resources</h3>
+              <p>
+                Quick access to official AMMOS data safety, account deletion, privacy, and licensing policies:
+              </p>
+
+              <div class="compliance-links-list">
+                <a href="delete-account.html" class="compliance-link-item">
+                  <span>Account &amp; Data Deletion Portal</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
+                <a href="privacy.html" class="compliance-link-item">
+                  <span>Official Privacy Policy</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
+                <a href="terms.html" class="compliance-link-item">
+                  <span>Terms of Service &amp; EULA</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+
+              <!-- Centered App Store & Google Play Download Buttons -->
+              <div class="store-buttons" aria-label="Download AMMOS Mobile App">
+                <a href="index.html#download" class="store-btn" aria-label="Download on the App Store">
+                  <svg class="store-btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.96 6.32c.67-.81 1.12-1.94 1-3.07-.96.04-2.13.64-2.82 1.45-.61.7-.115 1.85-1.01 2.96 1.08.08 2.16-.53 2.83-1.34z" />
+                  </svg>
+                  <span class="store-btn-text">
+                    <span class="store-btn-small">Download on the</span>
+                    <span class="store-btn-large">App Store</span>
+                  </span>
+                </a>
+
+                <a href="index.html#download" class="store-btn" aria-label="Get it on Google Play">
+                  <svg class="store-btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M3.61 1.814L13.793 12 3.61 22.186a1.55 1.55 0 0 1-.485-1.148V2.962c0-.447.185-.86.485-1.148zm10.89 10.89l2.792 2.792-11.49 6.634 8.698-9.426zm3.62-1.922l2.805 1.619c.79.456.79 1.6 0 2.056l-2.805 1.619-3.02-3.02 3.02-2.274zM5.802 2.48l11.49 6.634-2.792 2.792L5.802 2.48z" />
+                  </svg>
+                  <span class="store-btn-text">
+                    <span class="store-btn-small">GET IT ON</span>
+                    <span class="store-btn-large">Google Play</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Interactive FAQ Accordion Section (6 Expandable Items)
+         ================================================================== -->
+    <section id="faq" class="section section-gray">
+      <div class="container-narrow">
+        <div class="section-header">
+          <div class="eyebrow-badge">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>Frequently Asked Questions</span>
+          </div>
+          <h2>Everything You Need to Know About AMMOS</h2>
+          <p>
+            Click any question below to expand detailed answers on port-local scheduling, CV privacy, nominal certifications, and account management.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item is-open">
+            <button type="button" class="faq-question" aria-expanded="true">
+              <span>1. How does Port-Local Timezone scheduling and the 20-minute Search cutoff work?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Every job posted on AMMOS is automatically anchored to the departure port’s local timezone (via Google Places timezone lookup) rather than the viewer’s phone clock. Once a job’s scheduled port-local start time passes by more than 20 minutes (+20m cutoff), it automatically hides from public Crew search results so Crew only see live, actionable shifts.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>2. When can a Captain view a Crew member's CV / Resume and phone number?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                To protect Crew privacy, uploaded CVs/Resumes and direct phone numbers are strictly locked while browsing candidates or reviewing initial applications. They unlock exclusively when a mutual Active Match is established between the Captain and Crew member for a specific job.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>3. How do I update my Availability Calendar or add yachts to &ldquo;My Yachts&rdquo;?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Crew members can tap the Calendar view on their Home or Profile tab to toggle available dates on or off in seconds. Captains can manage their fleet under &ldquo;My Yachts&rdquo; using visual calendar-style vessel cards that store yacht name, length, type, home port, and upcoming shift schedules.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>4. Why are Certifications selected nominally without document file uploads?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                AMMOS allows Crew to select standard maritime qualifications (such as STCW, ENG1, PBL2, or Yachtmaster) nominally for fast filtering and matching without storing sensitive government-issued certificate scans on our servers. Captains verify original physical certificates directly with Crew upon onboarding.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>5. How are user star ratings calculated on AMMOS?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Ratings can only be submitted after an Active Match job has been completed. Both Captain and Crew can leave a verified 1-to-5 star rating, and a profile’s displayed rating is the live mathematical average of all completed job reviews.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>6. How do I cancel my AMMOS Pro subscription or delete my account?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                AMMOS Pro subscriptions are billed and managed directly through your Apple App Store or Google Play account settings, where you can manage or cancel auto-renewal at any time. To permanently delete your AMMOS account and personal data, go to Profile &rarr; Settings &rarr; Delete Account in the mobile app, or use our <a href="delete-account.html">Account &amp; Data Deletion Portal</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       Minimal Footer
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-link">
+            <span class="brand-logo-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="5" r="2.5"></circle>
+                <line x1="12" y1="7.5" x2="12" y2="19"></line>
+                <line x1="8" y1="11" x2="16" y2="11"></line>
+                <path d="M5 15c0 4 3.5 6 7 6s7-2 7-6"></path>
+                <path d="M3 20.5c2-1.2 4-1.2 6 0s4 1.2 6 0 4-1.2 6 0"></path>
+              </svg>
+            </span>
+            <span class="brand-text-group">
+              <span class="brand-wordmark">AMMOS</span>
+              <span class="brand-sub-badge">by Blue Eye Luxury</span>
+            </span>
+          </a>
+          <p class="footer-tagline">AMMOS &mdash; A product of Blue Eye Luxury.</p>
+          <p class="footer-contact">
+            Contact: <a href="mailto:support@blueeyeluxury.com">support@blueeyeluxury.com</a>
+          </p>
+        </div>
+
+        <nav class="footer-links-nav" aria-label="Footer Legal and Support Links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="support.html" class="footer-link active" aria-current="page">Support</a>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="terms.html" class="footer-link">Terms of Service</a>
+          <a href="delete-account.html" class="footer-link">Delete Account</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Blue Eye Luxury. All rights reserved.</span>
+        <span>18+ Verified Yachting Recruitment Platform</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
