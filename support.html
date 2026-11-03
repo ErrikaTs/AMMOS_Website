@@ -6,7 +6,7 @@
   <title>App Support &amp; Frequently Asked Questions — AMMOS by Blue Eye Luxury</title>
   <meta
     name="description"
-    content="Official App Support and Help Center for AMMOS by Blue Eye Luxury. Contact our support team at support@blueeyeluxury.com or browse Frequently Asked Questions for Captains and Crew."
+    content="Official App Support and Help Center for AMMOS by Blue Eye Luxury. Contact our support team at support@ammosyachting.com or browse Frequently Asked Questions for Captains and Crew."
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -48,6 +48,7 @@
         <ul class="nav-links">
           <li><a href="index.html#features" class="nav-link">Features</a></li>
           <li><a href="index.html#roles" class="nav-link">Captains &amp; Crew</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
           <li><a href="support.html" class="nav-link active" aria-current="page">Support</a></li>
           <li><a href="privacy.html" class="nav-link">Privacy</a></li>
           <li><a href="terms.html" class="nav-link">Terms</a></li>
@@ -75,7 +76,7 @@
         </p>
 
         <div class="page-hero-updated">
-          <span>Average Response Time: Under 24 Hours &middot; <a href="mailto:support@blueeyeluxury.com">support@blueeyeluxury.com</a></span>
+          <span>Average Response Time: Under 24 Hours &middot; <a href="mailto:support@ammosyachting.com">support@ammosyachting.com</a></span>
         </div>
       </div>
     </section>
@@ -182,8 +183,8 @@
               <p class="card-subtitle">
                 Prefer to reach out directly from your email client? Contact our support desk anytime for account, billing, or technical assistance:
               </p>
-              <a href="mailto:support@blueeyeluxury.com" class="btn btn-primary btn-full">
-                support@blueeyeluxury.com
+              <a href="mailto:support@ammosyachting.com" class="btn btn-primary btn-full">
+                support@ammosyachting.com
               </a>
             </div>
 
@@ -238,9 +239,9 @@
     </section>
 
     <!-- ==================================================================
-         Interactive FAQ Accordion Section (6 Expandable Items)
+         Complete 17-Question Categorized FAQ Section (#faq)
          ================================================================== -->
-    <section id="faq" class="section section-gray">
+    <section id="faq" class="section section-gray faq-section">
       <div class="container-narrow">
         <div class="section-header">
           <div class="eyebrow-badge">
@@ -249,110 +250,365 @@
           </div>
           <h2>Everything You Need to Know About AMMOS</h2>
           <p>
-            Click any question below to expand detailed answers on port-local scheduling, CV privacy, nominal certifications, and account management.
+            Browse all 5 categories below or filter by topic to explore answers on platform matching, Crew access, Captain plans, Founding Member billing, and data privacy.
           </p>
         </div>
 
-        <div class="faq-list">
-          <!-- FAQ 1 -->
-          <div class="faq-item is-open">
-            <button type="button" class="faq-question" aria-expanded="true">
-              <span>1. How does Port-Local Timezone scheduling and the 20-minute Search cutoff work?</span>
-              <span class="faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Every job posted on AMMOS is automatically anchored to the departure port’s local timezone (via Google Places timezone lookup) rather than the viewer’s phone clock. Once a job’s scheduled port-local start time passes by more than 20 minutes (+20m cutoff), it automatically hides from public Crew search results so Crew only see live, actionable shifts.
-              </p>
+        <!-- Interactive Category Filter Pills -->
+        <div class="faq-filter-bar" role="toolbar" aria-label="Filter FAQ by category">
+          <button type="button" class="faq-filter-btn active" data-faq-filter="all" aria-pressed="true">
+            All
+          </button>
+          <button type="button" class="faq-filter-btn" data-faq-filter="general" aria-pressed="false">
+            General
+          </button>
+          <button type="button" class="faq-filter-btn" data-faq-filter="crew" aria-pressed="false">
+            For Crew
+          </button>
+          <button type="button" class="faq-filter-btn" data-faq-filter="captains" aria-pressed="false">
+            Captain Plans &amp; Priority
+          </button>
+          <button type="button" class="faq-filter-btn" data-faq-filter="billing" aria-pressed="false">
+            Billing &amp; Founding Rate
+          </button>
+          <button type="button" class="faq-filter-btn" data-faq-filter="privacy" aria-pressed="false">
+            Privacy &amp; Safety
+          </button>
+        </div>
+
+        <!-- Categorized FAQ Groups (5 Categories, 17 Questions) -->
+        <div class="faq-categories-wrapper">
+          <!-- Category 1: General -->
+          <div class="faq-category-group" data-faq-category="general">
+            <div class="faq-category-header">
+              <span class="faq-category-badge">Category 1</span>
+              <h3 class="faq-category-title">General</h3>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-item is-open">
+                <button type="button" class="faq-question" aria-expanded="true">
+                  <span>What is AMMOS and how does it work?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    AMMOS is a real-time yachting recruitment platform that connects Captains directly with Crew members. Captains post job listings or send direct crew invites, Crew members apply to positions matching their role and location, and once both sides match, full profiles and instant in-app chat unlock automatically.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>Why do full crew profiles and chat only unlock on a match?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    To protect personal privacy and prevent unsolicited spam, full crew profiles (including CV, certificates, and contact details) and direct messaging remain private until a mutual match occurs (Full profile on match and Chat on match). A match happens when a Captain accepts a Crew member's job application or when a Crew member accepts a Captain's direct invite.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>Is AMMOS a crew agency or an employer?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    No. AMMOS is strictly a technology platform that facilitates direct connections between Captains and Crew. AMMOS does not act as an employer, maritime recruiter, or crewing agency, and does not participate in employment contracts, salary negotiations, or onboard operations. Captains and Crew are solely responsible for verifying maritime certificates, licenses, references, visas, and legal eligibility before entering into any employment agreement.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- FAQ 2 -->
-          <div class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
-              <span>2. When can a Captain view a Crew member's CV / Resume and phone number?</span>
-              <span class="faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                To protect Crew privacy, uploaded CVs/Resumes and direct phone numbers are strictly locked while browsing candidates or reviewing initial applications. They unlock exclusively when a mutual Active Match is established between the Captain and Crew member for a specific job.
-              </p>
+          <!-- Category 2: For Crew Members -->
+          <div class="faq-category-group" data-faq-category="crew">
+            <div class="faq-category-header">
+              <span class="faq-category-badge">Category 2</span>
+              <h3 class="faq-category-title">For Crew Members</h3>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>Is AMMOS free for Crew members?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Yes. Creating a Crew profile, uploading your CV and certificates, browsing job listings, receiving priority job alerts, applying for positions, and chatting with matched Captains is 100% free for Crew members.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>How do Urgent job alerts and location matching work?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    When you set your status to available and enable location permissions and push notifications, AMMOS matches you with nearby opportunities. Whenever a Captain posts an Urgent listing within a 150 km radius of your location, you receive an instant priority alert so you can review and apply right away.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- FAQ 3 -->
-          <div class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
-              <span>3. How do I update my Availability Calendar or add yachts to &ldquo;My Yachts&rdquo;?</span>
-              <span class="faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Crew members can tap the Calendar view on their Home or Profile tab to toggle available dates on or off in seconds. Captains can manage their fleet under &ldquo;My Yachts&rdquo; using visual calendar-style vessel cards that store yacht name, length, type, home port, and upcoming shift schedules.
-              </p>
+          <!-- Category 3: For Captains — Plans, Priority & Urgent Listings -->
+          <div class="faq-category-group" data-faq-category="captains">
+            <div class="faq-category-header">
+              <span class="faq-category-badge">Category 3</span>
+              <h3 class="faq-category-title">For Captains — Plans, Priority &amp; Urgent Listings</h3>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>What is included in the Free, Pro, and Premium Captain plans?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <ul class="faq-bullet-list">
+                    <li>• Free ($0): 1 yacht, 1 job listing per month, Standard search &amp; alert priority, plus full crew profile and chat on match.</li>
+                    <li>• Pro ($49/mo or $490/yr): 1 yacht, Unlimited listings, 3 Urgent listings per month, Unlimited crew invites, and High priority.</li>
+                    <li>• Premium ($149/mo or $1490/yr): Unlimited yachts, Unlimited listings, Unlimited Urgent listings, Unlimited crew invites, and Top (1st) priority.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>How does Search &amp; Alert Priority work?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Job listings and crew notifications are ranked hierarchically so subscribed Captains fill positions faster. All Urgent listings are pinned at the top of Search and Home first (ordered by Premium ➔ Pro ➔ Free), followed by standard listings ordered by subscription tier (Premium Top 1st ➔ Pro High ➔ Free Standard).
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>What is an Extra Urgent Listing ($9.99 / job)?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    An Urgent listing pins your job 1st in Search &amp; Home, expands visibility to a 3× wider radius (150 km), and sends an instant priority alert to available crew. If you are on the Free plan or have used your 3 monthly Urgent listings on Pro, you can purchase a single Extra Urgent Listing for $9.99 / job as a one-time, non-recurring purchase without changing your subscription.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- FAQ 4 -->
-          <div class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
-              <span>4. Why are Certifications selected nominally without document file uploads?</span>
-              <span class="faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                AMMOS allows Crew to select standard maritime qualifications (such as STCW, ENG1, PBL2, or Yachtmaster) nominally for fast filtering and matching without storing sensitive government-issued certificate scans on our servers. Captains verify original physical certificates directly with Crew upon onboarding.
-              </p>
+          <!-- Category 4: Free Trial, Billing, Founding Members & Cancellations -->
+          <div class="faq-category-group" data-faq-category="billing">
+            <div class="faq-category-header">
+              <span class="faq-category-badge">Category 4</span>
+              <h3 class="faq-category-title">Free Trial, Billing, Founding Members &amp; Cancellations</h3>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>Is there a free trial for new Captains?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Yes. New Captains subscribing to Pro or Premium for the first time receive a 30-day free trial (available once per account lifetime). You can explore all plan features free for 30 days, and you will only be billed if you choose to keep your subscription active after the 30-day trial period ends.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>How does Yearly billing ("2 months free") work?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    When you choose Yearly (2 months free), you are billed once per year at a discounted annual rate equal to 10 months instead of 12, giving you 2 full months free every year compared to monthly billing.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>How do billing, automatic renewal, and cancellations work?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    All subscriptions and payments are processed securely by Apple (App Store on iOS) or Google (Google Play on Android). Your subscription automatically renews at the end of each billing cycle (monthly or yearly) unless canceled at least 24 hours before the end of your current trial or billing period. Your account will be charged for renewal within 24 hours prior to the end of the current period. You can manage or cancel your subscription anytime in your device's Apple ID or Google Play Subscriptions settings, or via Profile ➔ Choose Your Plan inside AMMOS.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>How do I restore my subscription on a new phone?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Sign into your AMMOS account on your new device, go to Profile ➔ Choose Your Plan, and tap Restore Purchases at the bottom of the screen to sync your active subscription.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>What is the Founding Member rate and how does it work?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Captains who subscribe to Pro or Premium during our first month of launch lock in special Founding Member rates ($29/mo or $290/yr for Pro, and $89/mo or $890/yr for Premium) for life, as long as their paid subscription remains active. Founding Members can switch freely between Pro and Premium or between Monthly and Yearly billing while keeping their discount, but downgrading to Free or canceling permanently forfeits the Founding Member rate.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- FAQ 5 -->
-          <div class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
-              <span>5. How are user star ratings calculated on AMMOS?</span>
-              <span class="faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Ratings can only be submitted after an Active Match job has been completed. Both Captain and Crew can leave a verified 1-to-5 star rating, and a profile’s displayed rating is the live mathematical average of all completed job reviews.
-              </p>
+          <!-- Category 5: Privacy, Data Collection, Account Deletion & Safety -->
+          <div class="faq-category-group" data-faq-category="privacy">
+            <div class="faq-category-header">
+              <span class="faq-category-badge">Category 5</span>
+              <h3 class="faq-category-title">Privacy, Data Collection, Account Deletion &amp; Safety</h3>
             </div>
-          </div>
 
-          <!-- FAQ 6 -->
-          <div class="faq-item">
-            <button type="button" class="faq-question" aria-expanded="false">
-              <span>6. How do I cancel my AMMOS Pro subscription or delete my account?</span>
-              <span class="faq-icon" aria-hidden="true">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                AMMOS Pro subscriptions are billed and managed directly through your Apple App Store or Google Play account settings, where you can manage or cancel auto-renewal at any time. To permanently delete your AMMOS account and personal data, go to Profile &rarr; Settings &rarr; Delete Account in the mobile app, or use our <a href="delete-account.html">Account &amp; Data Deletion Portal</a>.
-              </p>
+            <div class="faq-list">
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>How do I delete my account and personal data inside the app?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    You can permanently delete your account at any time directly inside the app by going to Profile ➔ Delete Account and confirming the deletion. Deleting your account immediately removes your public profile, CV, yachts, active job listings, applications, and chat access.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>How can I delete my account if I have already uninstalled the app?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    If you have already deleted the AMMOS app from your device, you can request full account and data deletion by emailing our support team at <a href="mailto:support@ammosyachting.com">support@ammosyachting.com</a> from the email address registered to your AMMOS account with the subject line "Account Deletion Request". We will permanently delete your account and personal data within 7 business days (excluding only transaction invoices required to be retained by tax law). Note: Uninstalling the app or deleting your AMMOS account does not automatically cancel an active App Store or Google Play subscription; please ensure you also cancel your subscription in your Apple or Google account settings.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>What personal data does AMMOS collect and how is it used?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    In compliance with Apple App Store and Google Play Data Safety standards, AMMOS collects only the data necessary to operate the recruitment platform:
+                  </p>
+                  <ul class="faq-bullet-list">
+                    <li>• Account &amp; Contact Info: Name, email, phone number, and authentication credentials to create and secure your account.</li>
+                    <li>• Professional Profile &amp; Yacht Data: Role, sea-time experience, certificates, CV documents, profile photos, and yacht specifications to match Captains and Crew.</li>
+                    <li>• Location Data: Approximate or precise location (when permitted) to display nearby jobs and deliver 150 km Urgent job alerts.</li>
+                    <li>• In-App Communications: Job applications, crew invites, and chat messages between matched users.</li>
+                    <li>• Subscription &amp; Device Identifiers: Purchase status (via Apple/Google) and push notification tokens to deliver real-time alerts.</li>
+                  </ul>
+                  <p>
+                    All data is encrypted in transit, used strictly for app functionality, and is never sold to third-party advertisers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>How do I report or block a user or inappropriate listing?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    AMMOS maintains a zero-tolerance policy for harassment, fake listings, discrimination, or abusive behavior. You can report or block any user, job listing, or chat conversation directly inside the app using the Report/Block option on their profile or chat screen, or by contacting <a href="mailto:support@ammosyachting.com">support@ammosyachting.com</a>. Reported content is reviewed by our moderation team within 24 hours.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -384,7 +640,7 @@
           </a>
           <p class="footer-tagline">AMMOS &mdash; A product of Blue Eye Luxury.</p>
           <p class="footer-contact">
-            Contact: <a href="mailto:support@blueeyeluxury.com">support@blueeyeluxury.com</a>
+            Contact: <a href="mailto:support@ammosyachting.com">support@ammosyachting.com</a>
           </p>
         </div>
 
