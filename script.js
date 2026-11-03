@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ========================================================================
-     3. FAQ Accordion Expand/Collapse & Category Filter Handler
+     3. FAQ Accordion Expand/Collapse Handler (for support.html)
      ======================================================================== */
   const faqQuestions = document.querySelectorAll('.faq-question');
 
@@ -115,35 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const isOpen = parentItem.classList.toggle('is-open');
         questionBtn.setAttribute('aria-expanded', String(isOpen));
-      });
-    });
-  }
-
-  const faqFilterButtons = document.querySelectorAll('[data-faq-filter]');
-  const faqCategoryGroups = document.querySelectorAll('[data-faq-category]');
-
-  if (faqFilterButtons.length > 0 && faqCategoryGroups.length > 0) {
-    const activateFaqCategory = (selectedCategory) => {
-      faqFilterButtons.forEach((btn) => {
-        const isActive = btn.getAttribute('data-faq-filter') === selectedCategory;
-        btn.classList.toggle('active', isActive);
-        btn.setAttribute('aria-pressed', String(isActive));
-      });
-
-      faqCategoryGroups.forEach((group) => {
-        const groupCategory = group.getAttribute('data-faq-category');
-        const shouldShow =
-          selectedCategory === 'all' || groupCategory === selectedCategory;
-        group.classList.toggle('is-hidden', !shouldShow);
-      });
-    };
-
-    faqFilterButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const targetCategory = btn.getAttribute('data-faq-filter');
-        if (targetCategory) {
-          activateFaqCategory(targetCategory);
-        }
       });
     });
   }

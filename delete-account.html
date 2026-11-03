@@ -8,6 +8,8 @@
     name="description"
     content="Official Account and Personal Data Deletion portal for AMMOS by Blue Eye Luxury. Delete your account and associated data directly in the mobile app or submit a web deletion request."
   />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -17,15 +19,7 @@
   <header class="site-header">
     <div class="container navbar">
       <a href="index.html" class="brand-link" aria-label="AMMOS by Blue Eye Luxury Home">
-        <span class="brand-logo-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="5" r="2.5"></circle>
-            <line x1="12" y1="7.5" x2="12" y2="19"></line>
-            <line x1="8" y1="11" x2="16" y2="11"></line>
-            <path d="M5 15c0 4 3.5 6 7 6s7-2 7-6"></path>
-            <path d="M3 20.5c2-1.2 4-1.2 6 0s4 1.2 6 0 4-1.2 6 0"></path>
-          </svg>
-        </span>
+        <span class="brand-logo-slot"><img src="assets/logo.png" alt="AMMOS Logo" class="brand-logo-img" /></span>
         <span class="brand-text-group">
           <span class="brand-wordmark">AMMOS</span>
           <span class="brand-sub-badge">by Blue Eye Luxury</span>
@@ -45,10 +39,19 @@
       </button>
 
       <nav id="primary-nav-menu" class="nav-menu" aria-label="Primary Navigation">
+        <div class="nav-drawer-header">
+          <a href="index.html" class="brand-link" aria-label="AMMOS by Blue Eye Luxury Home">
+            <span class="brand-logo-slot"><img src="assets/logo.png" alt="AMMOS Logo" class="brand-logo-img" /></span>
+            <span class="brand-text-group">
+              <span class="brand-wordmark">AMMOS</span>
+              <span class="brand-sub-badge">by Blue Eye Luxury</span>
+            </span>
+          </a>
+        </div>
         <ul class="nav-links">
           <li><a href="index.html#features" class="nav-link">Features</a></li>
           <li><a href="index.html#roles" class="nav-link">Captains &amp; Crew</a></li>
-          <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+          <li><a href="support.html#faq" class="nav-link">FAQ</a></li>
           <li><a href="support.html" class="nav-link">Support</a></li>
           <li><a href="privacy.html" class="nav-link">Privacy</a></li>
           <li><a href="terms.html" class="nav-link">Terms</a></li>
@@ -249,15 +252,7 @@
       <div class="footer-grid">
         <div class="footer-brand-col">
           <a href="index.html" class="brand-link">
-            <span class="brand-logo-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="5" r="2.5"></circle>
-                <line x1="12" y1="7.5" x2="12" y2="19"></line>
-                <line x1="8" y1="11" x2="16" y2="11"></line>
-                <path d="M5 15c0 4 3.5 6 7 6s7-2 7-6"></path>
-                <path d="M3 20.5c2-1.2 4-1.2 6 0s4 1.2 6 0 4-1.2 6 0"></path>
-              </svg>
-            </span>
+            <span class="brand-logo-slot"><img src="assets/logo.png" alt="AMMOS Logo" class="brand-logo-img" /></span>
             <span class="brand-text-group">
               <span class="brand-wordmark">AMMOS</span>
               <span class="brand-sub-badge">by Blue Eye Luxury</span>
@@ -271,6 +266,7 @@
 
         <nav class="footer-links-nav" aria-label="Footer Legal and Support Links">
           <a href="index.html" class="footer-link">Home</a>
+          <a href="support.html#faq" class="footer-link">FAQ</a>
           <a href="support.html" class="footer-link">Support</a>
           <a href="privacy.html" class="footer-link">Privacy Policy</a>
           <a href="terms.html" class="footer-link">Terms of Service</a>
